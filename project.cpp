@@ -9,7 +9,6 @@ struct Process {
     int remaining, completion, waiting, turnaround;
 };
 
-/* ---------- Utility ---------- */
 void printTimes(Process p[], int n) {
     double wt = 0, tat = 0;
     cout << "\nPID\tArrival\tBurst\tCompletion\tWaiting\tTurnaround\n";
@@ -174,4 +173,5 @@ int main() {
     else cout << "Invalid choice\n";
 
     return 0;
+
 }
